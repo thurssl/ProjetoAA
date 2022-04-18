@@ -1,0 +1,45 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Nunito', sans-serif;
+    background-image: url(../img/pizza2.png);
+    background-size: cover;
+    margin-top: 100px;
+    color: wheat;
+}
+
+h1{
+
+    padding: 15px;
+}
+
+
+.container {
+    border-radius: 20px;
+    margin: auto;
+    text-align: center;
+    height: 460px;
+    width: 300px;
+    background-image: linear-gradient(#ff5101, #df6603);
+    border: solid 3px black;
+}
+
+#enviar,
+#estorno,
+#btplanilha{
+    background-image: linear-gradient(to right, #15A192, #4ED6ED);
+    border: none;
+    color: white;
+    padding: 4% 23%;
+    border-radius: 12px;
+}
+
+#tabela{
+    margin-top: 12px;
+    margin-left: 32px;
+    margin-bottom: 12px;
+}
+

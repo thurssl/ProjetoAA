@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./css/dashboard.css">
+</head>
+
+<body>
+    <div class="container">
+    <h1>PROJETO PIZZARIA</h1>
+    <input type="radio" checked id="mussarela" name="pizza" class="pizza">
+    <label for="mussarela">Mussarela</label>
+    <input type="radio" id="calabresa" class="pizza" name="pizza">
+    <label for="calabresa">Calabresa</label>
+    <input type="radio" id="margherita" class="pizza" name="pizza">
+    <label for="margherita">Marguerita</label>
+    <br><br>
+    <div class="enviar">
+    <button id="enviar">Enviar Carrinho</button>
+</div>
+<br>
+<div class="estorno">
+    <button id="estorno">Estorno</button>
+</div>
+    <br>
+    <table id="tabela" border="1">
+        <tr>
+            <th colspan="3">Encomenda</th>
+
+        </tr>
+        <tr>
+            <th>Pizza</th>
+            <th>Quantidade</th>
+            <th>Total</th>
+        </tr>
+        <tr>
+            <td>Mussarela</td>
+            <td id="quantidadem">0</td>
+            <td id="somam">R$ 0.00</td>
+        </tr>
+        <tr>
+            <td>Calabresa</td>
+            <td id="quantidadec">0</td>
+            <td id="somac">R$ 0.00</td>
+        </tr>
+        <tr>
+            <td>Marguerita</td>
+            <td id="quantidadema">0</td>
+            <td id="somama">R$ 0.00</td>
+        </tr>
+    </table>
+    <div class="planilha">
+    <button id="btplanilha" onclick="vendido()">Enviar Planilha</button>
+</div>
+</div>
+    <script src="./js/script.js"></script>
+    <script type="text/javascript" src="tableToExcel.js"></script>
+</body>
+
+</html>
